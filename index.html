@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns:repeat(4,calc(100vw/4));
+        grid-template-rows:repeat(3,calc(100vh/3));
+        margin: 0px;
+    }
+    header{
+        grid-column: 1/span 4;
+        background-color: rgb(70, 70, 103);
+        text-align: center;
+        color: white;
+    }
+    nav{
+        grid-column: 1/span 1;
+        grid-row: 2/span 1;
+        background-color: rgb(25, 199, 118);
+        text-align: center;
+        color: white;
+    }
+    footer{
+        grid-column: 1/span 4;
+        grid-row: 3/span 1;
+        background-color: pink;
+        text-align: center;
+        color: white;
+    }
+    main{
+        grid-column: 2/span 2;
+        grid-row: 2/span 1;
+        background-color: rgb(184, 25, 199);
+        text-align: center;
+        color: white;
+    }
+    aside{
+        grid-column: 4/span 1;
+        grid-row: 2/span 1;
+        background-color: rgb(25, 199, 118);
+        text-align: center;
+        color: white;
+    }
+</style>
+<body>
+    <header>header</header>
+    <nav>NavBar</nav>
+    <main>Main</main>
+    <aside>aside</aside>
+    <footer>footer</footer>
+</body>
+</html>
